@@ -1,0 +1,280 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*****Main Selectors*****/
+
+body {
+  font-family: 'Oswald', sans-serif;
+  color: #222;
+  background: #aaa;
+  padding: 0 5px;
+  max-width: 300px;
+  margin: 0 auto;
+  
+}
+
+header {
+  text-transform: uppercase;
+  font-size: .75em;
+  background: #343c45;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h1,
+p {
+  display: block;
+  text-align: center;
+}
+
+.intro {
+  font-size: .6em;
+  letter-spacing: 1px;
+  padding: 10px 0 0 0;
+  margin: 0 10px 0 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.45em;
+  color: #555;
+  padding-bottom: 35px;
+  border-bottom: 10px double;
+  border-color: #222;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 0 10px 10px 10px;
+  background: white;
+  border-radius: 10px;
+}
+
+.wrap {
+  min-height: 100vh;
+  background: #aaa;
+}
+
+/*****Form Selectors*****/
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #ddd;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 20px;
+}
+
+label {
+  text-align: left;
+}
+
+legend {
+  font-size: 1.20em;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding: 25px 0;
+  text-align: left;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+  max-width: 20px;
+}
+
+input,
+select,
+textarea {
+  border-radius: 6px;  
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  padding-left: 5px;
+  display: inline-block;
+}
+
+input[placeholder*="Required"],
+input[placeholder*="ex: 12345"]{
+  text-align: right;
+  font-size: .75em;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding-left: 5px;
+}
+
+option[value*="choose_state"],
+option[value*="choose_education"] {
+  color: #bbb;
+}
+
+#zip {
+  max-width: 50%;
+}
+
+textarea {
+  height: 120px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: coral;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid coral;
+}
+
+/*****Button*****/
+
+button {
+  width: 100%;
+  text-align: center;
+  padding: 15px 39px;
+  background: coral;
+  color: white;
+  font-size: 1.25em;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  border: 1px solid coral;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  opacity: .75;
+}
+
+/*****Column Layouts*****/
+
+.primary {
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.primary label {
+  display: block;
+  padding-bottom: 15px;
+  color: #666;
+}
+
+.secondary {
+  padding: 20px 0;
+  border-top: 2px solid;
+}
+
+.secondary label {
+  padding: 10px 0;
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0 2px 0;
+  background: #aaa;
+  color: #555;
+  font-style: italic; 
+}
+
+
+
+@media (min-width: 480px) {
+  body {
+    max-width: 500px;
+  }
+
+  .intro {
+    max-width: 480px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  legend {
+    font-size: 1.3em;
+  }
+
+  form {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+
+  .intro {
+    max-width: 715px;
+  }
+
+  form {
+    max-width: 740px;  
+  }
+
+  legend {
+    text-align: left;
+  }
+
+  .primary label {
+    display: inline-block;
+    max-width: 250px;
+  }
+
+  label {
+    width: 40%;
+  }
+
+  input,
+  select {
+    max-width: 60%;
+    padding-left: 50px;
+  }
+
+  #zip {
+    max-width: 35%;
+  }
+
+  .secondary label {
+    width: 500px;
+  }
+}
+
+
+
+
+
